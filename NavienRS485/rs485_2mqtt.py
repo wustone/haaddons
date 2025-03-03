@@ -5,7 +5,7 @@ from functools import reduce
 from collections import defaultdict
 
 MQTT_USERNAME = 'chocobi0'
-MQTT_PASSWORD = '1q2w3e4r'
+MQTT_PASSWORD = 'Cho12501030!'
 
 class Device:
     def __init__(self, device_name, device_id, device_subid, device_class, child_device, mqtt_discovery, optional_info):
@@ -148,7 +148,7 @@ class Wallpad:
     def on_disconnect(self, client, userdata, rc):
         raise ConnectionError
 
-MQTT_SERVER = '192.168.1.17'
+MQTT_SERVER = '192.168.1.9'
 ROOT_TOPIC_NAME = 'rs485_2mqtt'
 HOMEASSISTANT_ROOT_TOPIC_NAME = 'homeassistant'
 wallpad = Wallpad()
